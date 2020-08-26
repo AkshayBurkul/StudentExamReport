@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registarion</title>
+    <link rel="stylesheet" href="index.css">
+    <script type=text/javascript src="index.js"></script>
+</head>
+<body>
+      <form name="myForm" action="secondpage.html">
+        <div class="container">
+            <center>  <h1 style="background:lightseagreen;width:80%;color:white" > Student Exam Report</h1> </center><hr> 
+            
+                Name : <input type="text" id="name" name="name" placeholder= "Fullname" size="15" required /><br> 
+                Roll No:  <input type="text" id="rollno" name="rollno" placeholder= "Roll No" size="15" required pattern="[A-Z0-9]+" />   
+            <div id="subject">
+                <h2>Add Subject And Marks</h2>
+                Subject:<input type="text" id="sub1" name="sub11" placeholder= "Subject name" size="15" required />
+                Out Of:<select name="selector1" id="selector">
+                    <option value="100">100</option>
+                    <option value="50">50</option>
+                    </select>
+                Obtained Marks:<input type="text" required pattern="[0-9]+"id="mark1" name="mark1" style="width: 10%;" name="Obtainedmarks" placeholder= "Marks" size="2" required /><br>
+           
+
+                Subject:<input type="text" id="sub2" name="sub2" placeholder= "Subject name" size="15" required />
+                Out Of:<select name="selector2" id="selector">
+                    <option value="100">100</option>
+                    <option value="50">50</option>
+                </select>
+                Obtained Marks:<input type="text" id="mark2" required pattern="[0-9]+" style="width: 10%;" name="mark2" placeholder= "Marks" size="2" required /><br>
+           
+
+                Subject:<input type="text"  id="sub3" name="sub3" placeholder= "Subject name" size="15" required />
+                Out Of:<select name="selector3" id="selector">
+                    <option value="100">100</option>
+                    <option value="50">50</option>
+                </select>
+                Obtained Marks:<input type="text" style="width: 10%;" required pattern="[0-9]+" id="mark3" name="Obtainedmarks" placeholder= "Marks" size="2" required /><br>
+           
+
+                Subject:<input type="text" name="sub4" id="sub4" placeholder= "Subject name" size="15" required />
+                Out Of:<select name="selector4" id="selector">
+                    <option value="100">100</option>
+                    <option value="50">50</option>
+                    </select>
+                Obtained Marks:<input type="text" style="width: 10%;" required pattern="[0-9]+" id="mark4" name="mark4" placeholder= "Marks" size="2" required /><br>
+           
+            
+                <div id="subject2">
+                Subject:<input type="text" name="sub5" id="sub5" placeholder= "Subject name" size="15" required />
+                Out Of:<select name="selector5" id="selector">
+                    <option value="100">100</option>
+                    <option value="50">50</option>
+                </select>
+                Obtained Marks:<input type="text" style="width: 10%;" required pattern="[0-9]+" id="mark5" name="mark5" placeholder= "Marks" size="2" required />
+                <p id ="demo12"></p>   <!-- Here subject row created Dynamically when user Press the 'Add more Subject' Button-->
+
+                </div>
+                <input type="button" id="btn" value="Remove Subject" name="removesub" onclick="removesubject()">
+                <input type="button" id="btn" value="Add More Subject" name="addmoresub" onclick="addsubject()">
+         </div><hr>
+         <button type="submit" id="registerbtn" onclick="testjs()">Submit</button>   
+    </div>
+      
+</form>    
+<br><br>  
+ <hr>
+</body>
+</html>

@@ -1,0 +1,121 @@
+body{
+  height: 100%;
+  width:100%;
+  align-content: center;
+  position: relative;
+  font-family:serif; 
+  padding: 2px;
+}
+    
+.container {  
+    padding: 20px;  
+    background-color:pink;
+
+  
+  }
+  input[type=text]:focus {  
+    background-color:bisque;  
+    outline: none;  
+  }   
+  input[type=text] {  
+    width: 30%;  
+    padding: 10px;  
+    margin: 5px 0 15px 0;  
+    display: inline-block;  
+    border: none;  
+    background: #f1f1f1;  
+  } 
+  #selector{
+     
+      padding: .6em 1.4em .5em .8em;
+  }  
+
+  #registerbtn,#print {  
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 9px 15vw;
+    cursor: pointer;
+    border: none;
+    width: 30%;
+    opacity: 0.9;
+    font-weight: bold;
+  }  
+  #btn{
+    background-color: lightseagreen;
+    color: white;  
+    padding: 16px 20px;  
+    margin: 0px 10px;  
+    border: none;  
+    cursor: pointer;  
+    width: 20%;  
+    opacity: 0.9;  
+  }
+  #registerbtn:hover {  
+    opacity: 1;  
+  } 
+  #table1{
+    
+    width: 70%;
+    border-collapse: collapse;
+  
+    height: 100%;
+    position: relative;
+    left:10px;
+    right:10px
+   
+  }
+td,th{
+  padding: 13px;
+  border: 1px solid black;
+  
+
+}
+td{
+  font-weight: bold;
+  background: transparent;
+  
+
+  
+}
+th{
+  background-color :5; 
+  color: black;
+  background: #e8f2fd;  
+
+}
+#fullname,#rollnu{
+  left: -15vw;
+  color:black;
+  top: -2vw;
+  width:30%;
+  position: relative;
+ font-family: serif;
+ background:white ;
+ 
+}
+h1,h2{
+  font-family:serif ;
+  
+}
+.container1{
+  height: 100%;
+  width: 80%;
+  position: relative;
+
+  border-style: groove;
+  padding: -10px;
+  border-radius: 25px;
+  border:5px solid lightslategray;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#head{
+  background: #4f5f75;
+  color: white;
+  padding: 1px;
+  position: relative;
+  
+}
+#table1 tr:hover{background-color: #e7e9eb;  
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marksheet</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+ <center>
+   <div class="container1">
+
+      <div id="head">
+        <h1 >SAVITRIBAI PHULE PUNE UNIVERSITY</h1>
+        <h2 style="position: relative;top: -20px;" >COLLEGE OF ENGINEERING</h2>
+        <h3 style="position: relative;top: -30px;" >Academic Year:2020-21</h3>
+
+        <h3 id="fullname"></h3>   <!-- Name Of a Student will Print Here-->
+        <h3 id="rollnu"></h3>     <!-- Roll No. Of a Student will Print Here--> 
+      </div>
+      
+        <hr style="border: 3px solid darkgoldenrod; width: 80%;">
+            <table id="table1">
+            <tr>
+              <th width="20">SR.NO</th>
+              <th width="100">SUBJECTS</th>
+              <th width="60">MARKS</th>
+            </tr>
+            
+            <tr>
+                <td >1</td>
+                <td width="100" id="sub11"></td> 
+                <td id="mark11"></td>
+            </tr>
+            <tr>
+                <td >2</td>
+                <td width="100" id="sub22"></td> 
+                <td id="mark22"></td>
+            </tr>
+            <tr>
+                <td >3</td>
+                <td width="100" id="sub33"></td> 
+                <td id="mark33"></td>
+            </tr>
+            <tr>
+                <td >4</td>
+                <td width="100" id="sub44"></td> 
+                <td id="mark44"></td>
+            </tr>
+            <tr>
+                <td >5</td>
+                <td width="100" id="sub55"></td> 
+                <td id="mark55"></td>
+            </tr>
+            <tr>
+                <th colspan="8" width="220"> MARKS RESULT </th>
+            </tr>
+            <tr>
+                <td ></td>
+                <td width="100">MAXIMUM MARKS:</td>
+                <td id="zval2"></td>
+            </tr>
+            <tr>
+                <td ></td>
+                <td width="100">TOTAL MARKS OBTAINED:</td>
+                <td id="total"></td>
+            </tr>
+            <tr>
+                <td ></td>
+                <td width="100">PERCENTAGE:</td>
+                <td id="percentage"></td>
+            </tr>
+            <tr>
+                <td ></td>
+                <td width="100">GRADE:</td>
+                <td id="grade"></td>
+            </tr>
+        </table>
+        <hr style="border: 3px solid darkgoldenrod; width: 80%;">
+
+<h2>Signatures</h2><br><br><br><br>
+
+<script>
+    // Retrive Values from Local storage
+
+      document.getElementById("fullname").innerHTML=localStorage.getItem("studname");
+      document.getElementById("rollnu").innerHTML=localStorage.getItem("studroll");
+      document.getElementById("sub11").innerHTML=localStorage.getItem("subject1");
+      document.getElementById("sub22").innerHTML=localStorage.getItem("subject2");
+      document.getElementById("sub33").innerHTML=localStorage.getItem("subject3");
+      document.getElementById("sub44").innerHTML=localStorage.getItem("subject4");
+      document.getElementById("sub55").innerHTML=localStorage.getItem("subject5");
+      document.getElementById("mark11").innerHTML=localStorage.getItem("marks1");
+      document.getElementById("mark22").innerHTML=localStorage.getItem("marks2");
+      document.getElementById("mark33").innerHTML=localStorage.getItem("marks3");
+      document.getElementById("mark44").innerHTML=localStorage.getItem("marks4");
+      document.getElementById("mark55").innerHTML=localStorage.getItem("marks5"); 
+      document.getElementById("total").innerHTML=localStorage.getItem("sum1"); 
+      document.getElementById("percentage").innerHTML=localStorage.getItem("percentage1");
+      document.getElementById("grade").innerHTML=localStorage.getItem("grade1"); 
+      document.getElementById("zval2").innerHTML=localStorage.getItem("zval");
+
+      
+      
+  </script>
+      
+    </div>
+    <input type="button" value="print"  onclick="window.print()" id="print">
+  </center>
+</body>
+</html>
